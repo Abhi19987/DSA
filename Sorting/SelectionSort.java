@@ -1,3 +1,5 @@
+package Sorting;
+
 import java.util.*;
 
 public class SelectionSort {
@@ -14,19 +16,17 @@ public class SelectionSort {
             }
             // time complexity = O(n^2)
             for (int i = 0; i < a.length; i++) {
-                int min=i;
-                for (int j = i+1; j < a.length; j++) {
-                    if(a[min]>a[j])
-                    {
-                        min=j;
+                int min = i;
+                for (int j = i + 1; j < a.length; j++) {
+                    if (a[min] > a[j]) {
+                        min = j;
                     }
                 }
-                //swap
-                if(min!=i)
-                {
-                    int temp=a[i];
-                    a[i]=a[min];
-                    a[min]=temp;
+                // swap
+                if (min != i) {
+                    int temp = a[i];
+                    a[i] = a[min];
+                    a[min] = temp;
                 }
             }
             System.out.println("Sorted Array is :");
