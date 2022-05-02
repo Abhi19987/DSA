@@ -21,6 +21,8 @@ public class TowerOfHanoi {
             int n = sc.nextInt();
             // time complexity = O(2^n)
             towerofhanoi(n, "S", "H", "D");
+            int totalSteps=(int) (Math.pow(2, n)-1);
+            System.out.println("total no of steps used : "+totalSteps);
         }
     }
 }
